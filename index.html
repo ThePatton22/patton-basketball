@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
 
-  <title>WELCOME TO THE CHRISTINE AND PATTON WEDDING WEBSITE!!!</title>
+  <title>CHRISTINE AND PATTON WEDDING WEBSITE!!!</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,13 +12,6 @@
       margin: 0;
       padding: 0;
       background-color: #7d59a5;
-
-      /*
-        DELIBERATELY HORRIBLE 90s-STYLE TILED BACKGROUND.
-        Later, replace this with:
-
-        background-image: url("background.gif");
-      */
 
       background-image:
         repeating-linear-gradient(
@@ -167,12 +160,12 @@
     .rsvp {
       color: #ffff00;
       background: #ff0000;
-      font-size: 45px;
+      font-size: 40px;
       font-weight: bold;
       padding: 15px;
       border: 8px dashed lime;
       display: inline-block;
-      animation: blink 0.8s step-end infinite;
+      animation: blink 1.2s step-end infinite;
     }
 
     @keyframes blink {
@@ -244,6 +237,131 @@
         color: cyan;
       }
     }
+	
+	    .contact-form-section {
+      margin: 50px auto;
+      max-width: 750px;
+      background: #ffff00;
+      border: 12px ridge #00ffff;
+      padding: 25px;
+      box-shadow: 12px 12px #ff00ff;
+      color: #000000;
+      text-align: left;
+	  
+    }
+
+    .contact-form-section h2 {
+      text-align: center;
+      margin-top: 0;
+      font-size: 38px;
+      color: #00ff00;
+      background: #0000ff;
+      border: 7px dashed #ff0000;
+    }
+
+    .contact-warning {
+      text-align: center;
+      background: #ff0000;
+      color: #ffff00;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 12px;
+      border: 5px outset #000000;
+      margin-bottom: 25px;
+    }
+
+    .form-row {
+      margin-bottom: 18px;
+    }
+
+    .form-row label {
+      display: block;
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .form-row input,
+    .form-row textarea {
+      width: 100%;
+      box-sizing: border-box;
+      font-family: "Comic Sans MS", Arial, sans-serif;
+      font-size: 18px;
+      padding: 8px;
+      border: 4px inset #999999;
+      background: white;
+    }
+
+    .form-row textarea {
+      min-height: 80px;
+      resize: vertical;
+    }
+
+    .form-name-row {
+      display: flex;
+      gap: 15px;
+    }
+
+    .form-name-row .form-row {
+      flex: 1;
+    }
+
+    .contact-options {
+      background: #00ffff;
+      border: 5px groove #ff00ff;
+      padding: 15px;
+      margin-top: 10px;
+    }
+
+    .contact-options label {
+      display: block;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 8px 0;
+    }
+
+    .contact-options input {
+      width: auto;
+      transform: scale(1.5);
+      margin-right: 10px;
+    }
+
+    .submit-button {
+      display: block;
+      margin: 30px auto 5px auto;
+      padding: 15px 25px;
+      font-family: Impact, "Arial Black", sans-serif;
+      font-size: 30px;
+      color: yellow;
+      background: red;
+      border: 8px outset lime;
+      cursor: pointer;
+    }
+
+    .submit-button:hover {
+      background: blue;
+      color: lime;
+    }
+
+    .small-form-note {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 15px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @media (max-width: 600px) {
+      .form-name-row {
+        display: block;
+      }
+
+      .contact-form-section {
+        padding: 15px;
+      }
+    }
   </style>
 </head>
 
@@ -252,7 +370,7 @@
 
   <div class="marquee">
     <span>
-     Sup fuckers
+     sup fuckers
     </span>
   </div>
 
@@ -264,19 +382,22 @@
     </h1>
 
 
-    <div class="basketball">
-      🏀
-    </div>
+<a href="#contact-form" title="GIVE US YOUR CONTACT INFORMATION!!!">
+  <div class="basketball">
+    🏀
+  </div>
+</a>
+
+        <p class="blink-text" style="font-size: 24px; font-weight: bold;">
+      IF YOU HAVE ANY INTEREST IN ATTENDING THIS WEDDING CLICK THE BASKETBALL TO GIVE US YOUR CONTACT DETAILS!!!!!
+    </p>     
 
 
-    <div class="divider">
+    <!-- <div class="divider">
       ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
     </div>
 
 
-        <!--<p class="blink-text" style="font-size: 24px; font-weight: bold;">
-      PLEASE BOOKMARK THIS PAGE!!!!!
-    </p>     
 
 
     <div class="divider">
@@ -366,22 +487,24 @@
 
 
     <div class="rsvp">
-      CLICK THE BASKETBALL TO RSVP!!!!!
+      CLICK THE BASKETBALL TO GIVE CONTACT DETAILS!!!!!
     </div>
 
 
     <br><br>
 
 
-    <!--
-      Change "#" to the real RSVP link later.
-    -->
+
 
     <a href="#" title="CLICK HERE TO RSVP!!!">
 
-      <div class="basketball">
-        🏀
-      </div>
+<a href="#contact-form" title="GIVE US YOUR CONTACT INFORMATION!!!">
+
+  <div class="basketball">
+    🏀
+  </div>
+
+</a>
 
     </a>
 
@@ -434,11 +557,338 @@
   </div>
 
 
+
   <div class="marquee">
     <span>
 🏀 💍 🏀 💍 🏀 bye friend 🏀 💍 🏀 💍 🏀
     </span>
   </div>
 
+<p>&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;</p>
+
+<div id="contact-form" class="contact-form-section">
+
+  <h2>
+    I HAVE SOME AMOUNT OF INTEREST IN POSSIBLY ATTENDING THIS WEDDING
+  </h2>
+
+  <div class="contact-warning">
+    🚨 IMPORTANT DISCLAIMER 🚨<br><br>
+
+    THIS IS NOT AN RSVP. THAT WILL COME LATER.<br>
+    WE ARE JUST TRYING TO FIGURE OUT WHERE YOU LIVE AND HOW TO CONTACT YOU.
+  </div>
+
+
+  <form
+    id="contactForm"
+    action="https://formspree.io/f/xvkoravw"
+    method="POST"
+  >
+
+    <div class="form-name-row">
+
+      <div class="form-row">
+        <label for="first-name">
+          FIRST NAME
+        </label>
+
+        <input
+          type="text"
+          id="first-name"
+          name="First Name"
+          required
+        >
+      </div>
+
+
+      <div class="form-row">
+        <label for="last-name">
+          LAST NAME
+        </label>
+
+        <input
+          type="text"
+          id="last-name"
+          name="Last Name"
+          required
+        >
+      </div>
+
+    </div>
+
+
+    <div class="form-row">
+      <label for="plus-one">
+        SPOUSE / PARTNER / +1 NAME
+      </label>
+
+      <input
+        type="text"
+        id="plus-one"
+        name="Partner or Plus One"
+        placeholder="Leave blank if this does not apply"
+      >
+    </div>
+
+
+    <div class="form-row">
+      <label for="address">
+        MAILING ADDRESS
+      </label>
+
+      <textarea
+        id="address"
+        name="Mailing Address"
+        required
+        placeholder="Street address, apartment/unit, city, state, ZIP"
+      ></textarea>
+    </div>
+
+
+    <div class="form-row">
+      <label for="email">
+        EMAIL ADDRESS
+      </label>
+
+      <input
+        type="email"
+        id="email"
+        name="Email"
+        required
+      >
+    </div>
+
+
+    <div class="form-row">
+      <label for="phone">
+        PHONE NUMBER
+      </label>
+
+      <input
+        type="tel"
+        id="phone"
+        name="Phone"
+        required
+      >
+    </div>
+
+
+    <div class="form-row">
+      <label for="instagram">
+        INSTAGRAM
+      </label>
+
+      <input
+        type="text"
+        id="instagram"
+        name="Instagram"
+        placeholder="@whatever"
+      >
+    </div>
+
+
+    <div class="form-row">
+      <label for="tiktok">
+        TIKTOK
+      </label>
+
+      <input
+        type="text"
+        id="tiktok"
+        name="TikTok"
+        placeholder="@whatever"
+      >
+    </div>
+
+
+    <div class="form-row">
+
+      <label>
+        HOW MAY WE HARASS YOU ABOUT WEDDING-RELATED MATTERS?
+      </label>
+
+      <div class="contact-options">
+
+        <label>
+          <input
+            type="checkbox"
+            name="Preferred Contact"
+            value="Text"
+          >
+          TEXT MESSAGE
+        </label>
+
+
+        <label>
+          <input
+            type="checkbox"
+            name="Preferred Contact"
+            value="Email"
+          >
+          EMAIL
+        </label>
+
+
+        <label>
+          <input
+            type="checkbox"
+            name="Preferred Contact"
+            value="Instagram"
+          >
+          INSTAGRAM DM
+        </label>
+
+
+        <label>
+          <input
+            type="checkbox"
+            name="Preferred Contact"
+            value="TikTok"
+          >
+          TIKTOK DM
+        </label>
+
+
+        <label>
+          <input
+            type="checkbox"
+            name="Preferred Contact"
+            value="Literally Anything"
+          >
+          I DON'T CARE. JUST FIND ME.
+        </label>
+
+      </div>
+
+    </div>
+
+
+    <div class="form-row">
+      <label for="notes">
+        ANYTHING ELSE WE SHOULD KNOW?
+      </label>
+
+      <textarea
+        id="notes"
+        name="Notes"
+        placeholder="Optional. "
+      ></textarea>
+    </div>
+
+
+    <button
+      type="submit"
+      class="submit-button"
+    >
+      🚨 SUBMIT MY INFORMATION 🚨
+    </button>
+
+
+    <div class="small-form-note">
+	I'm not selling your information, I wouldn't even know how to start.<br> I just want to make sure I know how to communicate with you.
+    </div>
+
+  </form>
+  
+  <div
+  id="formSuccess"
+  style="
+    display: none;
+    text-align: center;
+    background: lime;
+    color: blue;
+    border: 10px ridge magenta;
+    padding: 25px;
+    margin-top: 25px;
+    font-size: 28px;
+    font-weight: bold;
+  "
+>
+  🚨 YOUR INFORMATION HAS BEEN SUCCESSFULLY SENT🚨
+
+  <br><br>
+
+  CHRISTINE & PATTON NOW KNOW WHERE TO FIND YOU.
+
+  <br><br>
+
+  🏀 💍 🏀 💍 🏀
+</div>
+
+</div>
+
+<script>
+  const contactForm = document.getElementById("contactForm");
+  const formSuccess = document.getElementById("formSuccess");
+
+  contactForm.addEventListener("submit", async function(event) {
+
+    event.preventDefault();
+
+    const submitButton = contactForm.querySelector(".submit-button");
+
+    submitButton.disabled = true;
+    submitButton.innerText = "🚨 SENDING YOUR INFORMATION TO CHRISTINE AND PATTON... 🚨";
+
+    const formData = new FormData(contactForm);
+
+    try {
+
+      const response = await fetch(contactForm.action, {
+        method: contactForm.method,
+        body: formData,
+        headers: {
+          "Accept": "application/json"
+        }
+      });
+
+      if (response.ok) {
+
+        contactForm.style.display = "none";
+        formSuccess.style.display = "block";
+
+        formSuccess.scrollIntoView({
+          behavior: "smooth",
+          block: "center"
+        });
+
+      } else {
+
+        submitButton.disabled = false;
+        submitButton.innerText = "🚨 SUBMIT MY PERSONAL INFORMATION 🚨";
+
+        alert(
+          "SOMETHING HAS GONE TERRIBLY WRONG. PLEASE TRY AGAIN."
+        );
+
+      }
+
+    } catch (error) {
+
+      submitButton.disabled = false;
+      submitButton.innerText = "🚨 SUBMIT MY PERSONAL INFORMATION 🚨";
+
+      alert(
+        "THE INTERNET HAS FAILED US. PLEASE TRY AGAIN."
+      );
+
+    }
+
+  });
+</script>
+
+  <div class="marquee">
+    <span>
+💃 🕺  HOPE YOU ARE READY TO DANCE  💃 🕺
+    </span>
+  </div>
+  
 </body>
 </html>
