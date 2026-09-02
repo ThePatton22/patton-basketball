@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>WELCOME TO THE CHRISTINE AND PATTON WEDDING WEBSITE!!!</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #7d59a5;
+
+      /*
+        DELIBERATELY HORRIBLE 90s-STYLE TILED BACKGROUND.
+        Later, replace this with:
+
+        background-image: url("background.gif");
+      */
+
+      background-image:
+        repeating-linear-gradient(
+          45deg,
+          rgba(255,255,255,0.08) 0px,
+          rgba(255,255,255,0.08) 15px,
+          rgba(0,255,255,0.10) 15px,
+          rgba(0,255,255,0.10) 30px
+        );
+
+      font-family: "Comic Sans MS", "Times New Roman", serif;
+      text-align: center;
+      color: #000000;
+    }
+
+    .page {
+      width: 90%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-family: "Comic Sans MS", cursive;
+      font-size: 48px;
+      color: #00ff00;
+      text-shadow: 3px 3px #ff00ff;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-family: "Times New Roman", serif;
+      font-size: 42px;
+      color: #ffff00;
+      background-color: #ff00ff;
+      padding: 10px;
+      border: 5px ridge cyan;
+    }
+
+    h3 {
+      font-size: 32px;
+      color: cyan;
+      text-shadow: 2px 2px red;
+    }
+
+    .marquee {
+      overflow: hidden;
+      white-space: nowrap;
+      background: black;
+      color: yellow;
+      border-top: 5px solid red;
+      border-bottom: 5px solid red;
+      font-weight: bold;
+      font-size: 24px;
+      padding: 7px 0;
+    }
+
+    .marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: marquee 10s linear infinite;
+    }
+
+    @keyframes marquee {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-100%);
+      }
+    }
+
+    .basketball {
+      display: inline-block;
+      font-size: 130px;
+      line-height: 1;
+      animation: spin 2s linear infinite;
+      cursor: pointer;
+      filter: drop-shadow(8px 8px 0px rgba(0,0,0,0.35));
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .basketball:hover {
+      animation-duration: 0.35s;
+    }
+
+    .divider {
+      font-size: 25px;
+      color: yellow;
+      margin: 30px 0;
+      overflow: hidden;
+    }
+
+    .couple-photo {
+      max-width: 650px;
+      width: 90%;
+      border: 12px ridge #00ffff;
+      box-shadow: 10px 10px #ff00ff;
+      margin: 15px;
+    }
+
+    .venue-photo {
+      margin: 10px;
+      border: 8px outset yellow;
+    }
+
+    .hot {
+      font-family: Impact, "Arial Black", sans-serif;
+      font-size: 42px;
+      font-style: italic;
+      color: yellow;
+      background: blue;
+      border: 7px double red;
+      padding: 15px;
+      transform: rotate(-1deg);
+    }
+
+    .location {
+      background: #00ffff;
+      color: #ff0000;
+      font-size: 28px;
+      border: 10px groove #ffff00;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 650px;
+    }
+
+    .map {
+      width: 90%;
+      max-width: 700px;
+      height: 350px;
+      border: 10px ridge lime;
+      background: white;
+    }
+
+    .rsvp {
+      color: #ffff00;
+      background: #ff0000;
+      font-size: 45px;
+      font-weight: bold;
+      padding: 15px;
+      border: 8px dashed lime;
+      display: inline-block;
+      animation: blink 0.8s step-end infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        visibility: hidden;
+      }
+    }
+
+    .counter {
+      background: black;
+      color: lime;
+      font-family: "Courier New", monospace;
+      font-size: 40px;
+      letter-spacing: 8px;
+      padding: 8px 15px;
+      display: inline-block;
+      border: 5px inset gray;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 15px;
+      color: navy;
+    }
+
+    .construction {
+      font-family: Impact, sans-serif;
+      color: yellow;
+      background: black;
+      border: 6px repeating-linear-gradient(
+        45deg,
+        yellow,
+        yellow 10px,
+        black 10px,
+        black 20px
+      );
+      padding: 10px;
+      font-size: 24px;
+    }
+
+    a {
+      color: blue;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    a:visited {
+      color: purple;
+    }
+
+    a:hover {
+      color: red;
+    }
+
+    .blink-text {
+      animation: colorBlink 0.6s step-end infinite;
+    }
+
+    @keyframes colorBlink {
+      0% {
+        color: lime;
+      }
+
+      33% {
+        color: yellow;
+      }
+
+      66% {
+        color: cyan;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <div class="marquee">
+    <span>
+     Sup fuckers
+    </span>
+  </div>
+
+
+  <div class="page">
+
+    <h1>
+      ✨ WELCOME TO THE WEDDING WEBSITE OF OUR DREAMS ✨
+    </h1>
+
+
+    <div class="basketball">
+      🏀
+    </div>
+
+
+    <div class="divider">
+      ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+    </div>
+
+
+        <!--<p class="blink-text" style="font-size: 24px; font-weight: bold;">
+      PLEASE BOOKMARK THIS PAGE!!!!!
+    </p>     
+
+
+    <div class="divider">
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    </div>  -->
+
+
+    <img
+      src="engaged.png"
+      alt="CHRISTINE WAS SURPRISED"
+      class="couple-photo"
+    >
+
+
+    <div class="hot">
+      SHE'S SO RIDICULOUSLY HOT
+    </div>
+
+
+    <div class="divider">
+      🏀 🏀 🏀 🏀 🏀 🏀 🏀
+    </div>
+
+
+    <h3>
+      WE WILL GET MARRIED AT:
+    </h3>
+
+
+    <div class="location">
+
+      <strong>LA VALENCIA HOTEL</strong>
+
+      <br><br>
+
+      1132 Prospect St,<br>
+	  La Jolla, CA 92037
+      
+      <br><br>
+
+     
+        IT IS VERY EXPENSIVE TO STAY THERE.<br><br> I SUGGEST AIRBNB OR DIFFERENT HOTEL IN SAN DIEGO OR SURRONDING AREAS. IT'S ONLY LIKE 15 MINUTE UBER RIDE FROM THE AIRPORT
+   
+
+    </div>
+
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172109.87336348943!2d-117.28891854301413!3d32.82396243609159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc03fb8979fa2b%3A0x381c9d00f4d4e2f!2s1132%20Prospect%20St%2C%20La%20Jolla%2C%20CA%2092037!5e0!3m2!1sen!2sus!4v1788369234166!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+
+    <h3>
+      PICTURES OF WHERE WE ARE GETTING MARRIED!!!
+    </h3>
+
+
+
+    <div>
+
+      <img
+        src="lava1.jpg"
+        alt="Wedding venue"
+        class="venue-photo"
+		width="64%"
+      >
+
+      <img
+        src="lava2.jpg"
+        alt="Wedding venue"
+        class="venue-photo"
+				width="64%"
+      >
+
+      <img
+        src="lava3.jpg"
+        alt="Wedding venue"
+        class="venue-photo"
+				width="64%"
+      >
+
+    </div>
+
+
+    <div class="divider">
+      =========================================
+    </div>
+
+
+    <div class="rsvp">
+      CLICK THE BASKETBALL TO RSVP!!!!!
+    </div>
+
+
+    <br><br>
+
+
+    <!--
+      Change "#" to the real RSVP link later.
+    -->
+
+    <a href="#" title="CLICK HERE TO RSVP!!!">
+
+      <div class="basketball">
+        🏀
+      </div>
+
+    </a>
+
+
+    <p style="font-size: 20px; font-weight: bold;">
+      ^^^ CLICK THE BASKETBALL ^^^
+    </p>
+
+
+    <div class="divider">
+      =========================================
+    </div>
+
+
+    <!--
+    <div class="construction">
+      ⚠️ WARNING ⚠️ WARNING ⚠️ WARNING ⚠️
+    </div>
+
+
+    <p style="font-size: 26px; color: red; font-weight: bold;">
+      THIS WEBSITE IS
+    </p>
+
+    <p style="font-size: 34px; font-weight: bold;">
+      🚧 UNDER CONSTRUCTION 🚧
+    </p>
+
+    <p>
+      Please check back frequently because this website
+      may become EVEN MORE ADVANCED.
+    </p>
+
+
+    <div class="divider">
+      ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦
+    </div>
+    -->
+
+    <p style="font-size: 18px;">
+      You are visitor number:
+    </p>
+
+
+    <div class="counter">
+      <script type="text/javascript" src="https://counter.websiteout.com/js/2/5/5/0"></script>
+    </div>
+
+
+  </div>
+
+
+  <div class="marquee">
+    <span>
+🏀 💍 🏀 💍 🏀 bye friend 🏀 💍 🏀 💍 🏀
+    </span>
+  </div>
+
+</body>
+</html>
